@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'josefin sans', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url( '../img1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    background:rgba(0,0,0,0.3);
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+.logo{
+    width: 25%;
+    text-align: center;
+
+}
+.menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+ a {
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+nav .menu a:first-child{
+    color:cyan;
+ }
+
+
+
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+section{
+
+}
+h3{
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+  color: white;
+}
+ section h1{
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+    color: white;
+    margin: 30px 0 30px 0;
+
+}
+p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow:1px 1px 1px 1px black ;
+    color: white;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+.btnone{
+    /* background-color: #00b894; */
+    background: #fff;
+    color: #000;
+}
+.btnone:hover{
+    background: cyan;
+    color: white;
+}
+.btntwo{
+    /* background: #00b894; */
+    background: cyan;
+    color: white;
+}
+.btntwo:hover{
+    background: #fff;
+    color: #000;
+}
+.change_content:after{
+ content: '';
+ animation: changetext 10s infinite linear;
+ color:  cyan;
+}
+
+@keyframes changetext{
+    0%{content:"Darjeeling";}
+    20%{content:"Jaipur";}
+    40%{content:"Delhi";}
+    60%{content:"MUmbai";}
+    80%{content:"Gujart";}
+    100%{content:"jammu Kashmir";}
+}
